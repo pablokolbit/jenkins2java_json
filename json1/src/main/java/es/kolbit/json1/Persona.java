@@ -3,9 +3,11 @@ package es.kolbit.json1;
 public class Persona {
 
 	private String nombre;
+	private String apellidos;
 
-	public Persona(String nombre) {
+	public Persona(String nombre, String apellidos) {
 		this.nombre = nombre;
+		this.apellidos = apellidos;
 	}
 
 	public String getNombre() {
@@ -16,10 +18,19 @@ public class Persona {
 		this.nombre = nombre;
 	}
 
+	public String getApellidos() {
+		return apellidos;
+	}
+
+	public void setApellidos(String apellidos) {
+		this.apellidos = apellidos;
+	}
+
 	@Override
 	public String toString() {
-		return "Persona [nombre=" + nombre + "]";
+		return "[" + nombre + ", " + apellidos + "]";
 	}
-	
+
+
 	
 }

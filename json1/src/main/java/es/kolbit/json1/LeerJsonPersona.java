@@ -15,6 +15,6 @@ public class LeerJsonPersona {
 		} catch (JsonProcessingException e) {
 			e.printStackTrace();
 		}
-		return new Persona(nodo.get("nombre").asText());
+		return new Persona(nodo.get("nombre").asText(), nodo.get("apellidos").asText());
 	}
 }
